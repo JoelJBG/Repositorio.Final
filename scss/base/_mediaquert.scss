@@ -1,0 +1,10 @@
+@media all and (max-width: 800px) {
+	.galeria {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media all and (max-width: 600px) {
+	.galeria {
+		grid-template-columns: 1fr;
+	}
+}
