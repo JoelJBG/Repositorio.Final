@@ -44,9 +44,9 @@ header nav ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   height: auto;
-  max-width: 100%;
-  position: relative; }
+  min-height: 700px; }
 
 .tallercitoLetras {
   margin: auto;
@@ -57,12 +57,21 @@ header nav ul li {
 .textoPresentacion {
   margin: auto;
   width: 100%;
-  height: auto;
+  height: 600px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 10px; }
+
+main {
+  position: relative;
+  min-height: 100vh; }
 
 /**/
 .botonNosotros {
@@ -73,44 +82,39 @@ header nav ul li {
   font-weight: 40px; }
 
 .textoNosotros {
-  margin-left: 20vh;
+  margin: auto;
   width: 30rem;
   height: auto;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color: white; }
+  color: white;
+  text-align: left; }
 
 .imagenNosotros {
-  height: 20rem; }
+  height: 20rem;
+  margin: auto; }
 
 .nosotrosYfoto {
   margin: auto;
-  padding: 10px 1px;
+  padding: 30px 10px;
   width: 70%;
+  height: auto;
   background-color: rgba(5, 7, 12, 0.4);
   box-sizing: content-box;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
 
 /**/
-.title {
-  text-align: center;
-  font-size: 40px;
-  color: #6a6a6a;
-  margin-top: 100px;
-  font-weight: 100;
-  font-family: "Poppins", sans-serif; }
-
 .conteiner {
   width: 100%;
   max-width: 1200px;
   height: 430px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto; }
+  justify-content: center; }
   .conteiner .card {
     width: 330px;
     height: 430px;
@@ -143,10 +147,11 @@ header nav ul li {
 .galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em; }
+  grid-gap: 2em;
+  padding-bottom: 120px; }
 
 figure {
-  margin: 0px;
+  margin: 1px;
   position: relative;
   overflow: hidden; }
   figure::after {
@@ -189,6 +194,7 @@ figure {
   padding: 10px 20px;
   box-sizing: content-box;
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 7px;
   color: black; }
 
@@ -236,12 +242,16 @@ textarea {
     background-color: azure;
     cursor: pointer; }
 
-.rectanguloFooter {
-  margin: 0;
-  width: 100%;
+.textoInterior {
+  margin: auto;
+  padding-top: 10px;
+  width: 400px;
   height: auto;
-  background-color: #1f1f1f;
-  opacity: 0.80; }
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-align: center; }
 
 .mapResponsive {
   overflow: hidden;
@@ -249,19 +259,27 @@ textarea {
   position: relative;
   height: 0;
   width: 60%;
-  margin: auto; }
+  margin: auto;
+  background-color: #6a6a6a; }
   .mapResponsive iframe {
     height: 100%;
     width: 100%;
     position: absolute; }
 
+.rectanguloFooter {
+  background-color: #1f1f1f;
+  opacity: 0.80; }
+
 .findusYcopyright {
-  background-color: rgba(5, 7, 12, 0.9);
+  background-color: #05070c;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: center; }
+
+.copyright .h4 {
+  z-index: 3; }
 
 .icon {
   margin: 10px;
@@ -269,7 +287,13 @@ textarea {
   .icon:hover {
     scale: 1.1; }
 
-@media all and (max-width: 800px) {
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2,5rem; }
+
+@media all and (max-width: 700px) {
   .galeria {
     grid-template-columns: 1fr 1fr; } }
 

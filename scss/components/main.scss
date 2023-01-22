@@ -3,13 +3,13 @@ $font-family_1: 'Poppins', sans-serif;
 
 .parallaxBackground {
 	background: linear-gradient(rgba(5,7,12,0.80),rgba(5,7,12,0.50)),url(../img/living.jpeg);
-	background-attachment: fixed;
+	background-attachment:fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
-	max-width: 100%;
 	position: relative;
+	height: auto;
+	min-height: 700px;
 }
 .tallercitoLetras {
 	margin: auto;
@@ -20,12 +20,22 @@ $font-family_1: 'Poppins', sans-serif;
 .textoPresentacion {
 	margin: auto;
 	width: 100%;
-	height: auto;
+	height:600px;
 	font-family: $font-family_1;
 	font-weight: 600;
 	font-size: 18px;
 	color: $color_1;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+main{
+	position: relative;
+	min-height: 100vh;  
 }
 
 /**/
@@ -42,25 +52,29 @@ $background-color_2: rgba(5,7,12,0.40);
 	font-weight: 40px;
 }
 .textoNosotros {
-	margin-left: 20vh;
+	margin: auto;
 	width: 30rem;
 	height: auto;
 	font-family: $font-family_1;
 	font-weight: 600;
 	font-size: 18px;
 	color: $color_2;
+	text-align:left;
+	
 }
 .imagenNosotros {
 	height: 20rem;
+	margin: auto;
 }
 .nosotrosYfoto {
 	margin: auto;
-	padding: 10px 1px;
+	padding: 30px 10px;
 	width: 70%;
+	height: auto;
 	background-color: $background-color_2;
 	box-sizing: content-box;
 	display: flex;
-	justify-content: center;
+	justify-content:space-between;
 	align-items: center;
 }
 
@@ -70,22 +84,15 @@ $color_3: #6a6a6a;
 $color_4: #020405;
 $background-color_3: rgb(253, 252, 252);
 
-.title {
-	text-align: center;
-	font-size: 40px;
-	color: $color_3;
-	margin-top: 100px;
-	font-weight: 100;
-	font-family: $font-family_1;
-}
+
 .conteiner {
 	width: 100%;
 	max-width: 1200px;
 	height: 430px;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: auto;
 	.card {
 		width: 330px;
 		height: 430px;
@@ -129,6 +136,8 @@ $background-color_4: rgba(0,0,0,0);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2em;
+	padding-bottom: 120px;
+
 }
 figure {
 	&::after {
@@ -156,7 +165,7 @@ figure {
 			transition-timing-function: ease-out;
 		}
 	}
-	margin: 0px;
+	margin: 1px;
 	position: relative;
 	overflow: hidden;
 	img {
@@ -190,6 +199,7 @@ $background-color_7: azure;
 	padding: 10px 20px;
 	box-sizing: content-box;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	border-radius: 7px;
 	color: $color_5;
 }
@@ -236,5 +246,32 @@ textarea {
 	&:hover {
 		background-color: $background-color_7;
 		cursor: pointer;
+	}
+}
+
+.textoInterior {
+	margin: auto;
+	padding-top: 10px;
+	width: 400px;
+	height: auto;
+	font-family: $font-family_1;
+	font-weight: 700;
+	font-size: 18px;
+	color: $color_1;
+	text-align: center;
+}
+
+.mapResponsive {
+	overflow: hidden;
+	padding-bottom: 12%;
+	position: relative;
+	height: 0;
+	width: 60%;
+	margin: auto;
+	background-color: #6a6a6a;
+	iframe {
+		height:100%;
+		width: 100%;
+		position:absolute;
 	}
 }
