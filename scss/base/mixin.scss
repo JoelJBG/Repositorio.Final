@@ -1,0 +1,8 @@
+@mixin prodimgsize {
+	width: 330px;
+	height: 220px;
+}
+
+.prodimg {
+	@include prodimgsize;
+}
