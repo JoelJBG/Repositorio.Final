@@ -1,18 +1,13 @@
-$color_1: white;
-$font-family_1: 'Poppins', sans-serif;
-$background-color_1: #1f1f1f;
-$background-color_2: rgb(5,7,12);
-
 .rectanguloFooter {
-	background-color: $background-color_1;
+	background-color: $background-color_9;
 	opacity: 0.80;
 }
 
 .findusYcopyright {
-	background-color: $background-color_2;
+	background-color: $background-color_10;
 	color: $color_1;
 	font-family: $font-family_1;
-	font-weight: 700;
+	font-weight: 700; 
 	font-style: normal;
 	text-align: center;
 }

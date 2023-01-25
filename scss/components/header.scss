@@ -1,19 +1,13 @@
-$color_1: black;
-$color_2: aquamarine;
-$color_3: grey;
-$font-family_1: 'Poppins', sans-serif;
-$background-color_1: rgba(255, 255, 255, 0.3);
-
 .headerPrincipal {
 	font-family: $font-family_1;
 	font-weight: 700;
 	font-style: normal;
 	margin: 0;
 	padding: 0;
-	background-color: $background-color_1;
+	background-color: $background-color_8;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: flex-start; 
 	.logo {
 		img {
 			height: 90px;
@@ -30,9 +24,9 @@ $background-color_1: rgba(255, 255, 255, 0.3);
 }
 .navEnlace {
 	text-decoration: none;
-	color: $color_1;
+	color: $color_2;
 	&:hover {
-		color: $color_3;
+		color: $color_4;
 	}
 }
 header {
@@ -46,7 +40,7 @@ header {
 				justify-content: center;
 				&:hover {
 					transform: scale(0.95);
-					color: $color_2;
+					color: $color_4;
 				}
 			}
 		}
