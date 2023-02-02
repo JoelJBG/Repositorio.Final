@@ -16,16 +16,12 @@ body {
     background-size: cover;
 }
 
-.heroNos {
-	background-color: rgba(242, 240, 212, 0.4)
-}
+/* Nosotros */
 
-.botonNosotros {
-	margin: auto;
-	height: auto;
-	width: 100px;
-	background-color: $background-color_1;
-	font-weight: 40px;
+.heroNos {
+	background-color: rgba(242, 240, 212, 0.4);
+	position: relative;
+	z-index: -1;
 }
 
 .tallercitoLetras1 {
@@ -36,7 +32,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	top: 80px;
-	z-index: 1;
+	z-index: 999;
 }
 
 .contenedorNosotros {
@@ -131,6 +127,8 @@ height: 100%;
 
 .heroGaleria{
 	background: linear-gradient(rgba(5, 7, 12, 0.2), rgba(5, 7, 12, 0.5)), url("/img/Fondogaleria.jpg");
+	position: relative;
+	z-index: 0;
 }
 
 
@@ -158,6 +156,8 @@ height: 100%;
 
 .tz-gallery {
     padding: 40px;
+	z-index: -1;
+	position: relative;
 }
 
 /* Override bootstrap column paddings */
@@ -195,7 +195,6 @@ height: 100%;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
     background-color: rgba(218, 219, 155, 0.7);
     content: '';
     transition: 0.4s;
@@ -226,7 +225,7 @@ height: 100%;
 	margin-left: 15px;
 	margin-right: 15px;
 	position: relative;
-	z-index: 5;
+	z-index: -1;
 }
 
 .contact-form-heading h3 {
@@ -265,7 +264,6 @@ height: 100%;
 	padding: 10px 5px
 }
 
-/*16.5 Contact Form Button*/
 .send-btn {
 	text-align: center;
 	margin-top: 80px
@@ -295,6 +293,8 @@ height: 100%;
 	background-repeat: no-repeat;
 	background-size:cover;
 	padding-top: 70px;
+	position: relative;
+	z-index: -1;
 }
 
 .textoInterior {
@@ -310,7 +310,7 @@ height: 100%;
 }
 
 .mapResponsive {
-	z-index: 7777;
+	z-index: -1;
 	overflow: hidden;
 	padding-bottom: 12%;
 	position: relative;
@@ -322,7 +322,7 @@ height: 100%;
 		height:100%;
 		width: 100%;
 		position:absolute;
-		z-index: 9999;
+		z-index: 0;
 	}
 }
 
@@ -374,14 +374,14 @@ height: 100%;
 .catalogo{
 	width: 100%;
 	margin: auto;
-	z-index: 9099;
+	z-index: -1;
 	position: relative;
 
 }
 .catalogoFondoImg{
 	width: 100%;
 	margin: auto;
-	z-index: 999;
+	z-index: -1;
 }
 
 .catalogo1{
@@ -416,8 +416,14 @@ height: 100%;
 	background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.5)), url("/img/NosotrosFondo.jpg");
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	width: 100%;
 	min-height: 100vh;
-	}
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;	
+}
 
 .conteiner {
 	width: 100%;
@@ -429,7 +435,9 @@ height: 100%;
 	justify-content: center;
 	margin-bottom: 40px;
 	position: relative;
+	z-index: -1;
 	.card {
+		box-sizing: border-box;
 		width: 330px;
 		height: 430px;
 		border-radius: 8px;

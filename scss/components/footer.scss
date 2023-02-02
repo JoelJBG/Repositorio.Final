@@ -6,6 +6,8 @@ footer {
 	
 	.rectanguloFooter {
 	background-color: $background-color_9;
+	position: relative;
+	z-index: -2;
 	}
 	
 	.findusYcopyright {
