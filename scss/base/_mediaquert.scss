@@ -8,3 +8,55 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+@media (max-width: 540px) {
+    .tallercitoLetras {
+    width: 100%;
+    margin: auto;
+    
+    }
+  }
+
+  @media (max-width: 540px) {
+    .catalogoFondo{ 
+    width: 100%;
+	
+    }
+  }
+
+
+  @media screen and (max-width: 864px) {
+	.logo {
+		padding: 0;
+	}
+  }
+
+  @media screen and (max-width: 800px) {
+    .catalogo1 {
+      font-size: 18px;
+    }
+    .catalogo2 {
+      top: 10%;
+      font-size: 14px;
+      padding-bottom: 5px;
+    .catalogoFondoImg{
+      height: 110%;
+    }
+  }
+  
+    @media screen and (max-width: 1280px) {
+    .catalogo1 {
+      right: 50%;;
+    }
+    .catalogo2 {
+      top: 60%;
+    }
+  }}
+
+
+
+  @media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}

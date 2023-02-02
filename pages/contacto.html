@@ -9,61 +9,69 @@
 
     <!-- Fuente  --> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/Flavicon-chrome.png" type="png" sizes="16px">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+
+
     <title>Tallercito</title>
 
     <meta name="keywords" content="cortineria, decoracion, tapizados, moda, almohadones, living, fundas, confecciones, rollers, barrales, toldos, deco, arte, hogar, paneles, romanas, europeo ">
 </head>
 <body>
 
-    <header class="headerPrincipal">
-            
-        
-        <!---------------- LOGO ---------------------------------->
-        <div class="logo">
-            <a href="../index.html"><img src="../img/tallercito.png" alt="logo"></a>
-        </div>
-        <!-------------------------------------------------------->
-        
-        <!------------------------------- BARRA NAVEGACION ------------------------------>
-        <nav class="navBar"> 
-            <ul class="mainBar">
-                <li><a href="../index.html" class="navEnlace">Home</a></li>
-                <li><a href="../pages/nosotros.html" class="navEnlace">Nosotros</a></li>
-                <li><a href="../pages/productos.html" class="navEnlace">Productos</a></li>
-                <li><a href="../pages/galeria.html" class="navEnlace">Galeria</a></li>
-                <li><a href="../pages/contacto.html" class="navEnlace">Contacto</a></li>
-            </ul>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+            </label>
+            <div class="logo">
+                <a href="/index.html"><img class="imgLogo" src="/img/tallercito.png" alt="logo"></a>
+            </div>
+            <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="../index.html" class="navEnlace">Home</a></li>
+                        <li><a href="../pages/nosotros.html" class="navEnlace">Nosotros</a></li>
+                        <li><a href="../pages/productos.html" class="navEnlace">Productos</a></li>
+                        <li><a href="../pages/galeria.html" class="navEnlace">Galeria</a></li>
+                        <li><a href="../pages/contacto.html" class="navEnlace">Contacto</a></li>
+                    </ul>
+            </div>
         </nav>
-
-    </header>
+    </div>
 
     <!------------------------------------------------------------ MAIN ------------------------------------------------------------------------------->
     <main>
-        <section>
-            <div class="parallaxBackground">
+        <section class="hero2">
                 
                 <div class="textoInterior">
                 <h2 class="textoInterior">PODES PEDIR TU PRESUPUESTO O DEJANOS TU CONSULTA</h2>
                 </div>
                     
-                    <div class="formulario">
-                        <form action="">
-       
-                            <h2 class="letraContacto">Contacto</h2>
-                            <input type="text" name="Nombre" placeholder="Nombre">
-                            <input type="text" name="Apellido" placeholder="Apellido">
-                            <input type="text" name="Telefono" placeholder="Telefono">
-                            <input type="text" name="Email" placeholder="Email"> <br>
-                            <textarea name="mensaje" placeholder="Deje su Mensaje"></textarea>
-                            <input type="button" name="boton1" value="Enviar" id="boton">
-                                  
-                        </form>
+                <div class="contact-form-area">
+                    <div class="contact-form">
+                                                <form action="#">
+                                                    <input type="text" placeholder="Nombre">
+                                                    <input class="margin-top-lb-30 margin-top-sb-30" type="text" placeholder="Apellido">
+                                                    <input type="email" placeholder="Ingresa tu correo">
+                                                    <textarea placeholder="Deja tu mensaje" spellcheck="false"></textarea>
+                                                    <div class="send-btn">
+                                                        <input type="submit" value="Enviar" id="formsend">
+                                                    </div>
+                                                </form>
+                                            </div>
                     </div>
+                    
+                    
+                    
                     <div class="mapResponsive">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.1110682246185!2d-61.706208932852995!3d-33.113927425456666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9b5f939f543b3%3A0x951765cb984f399e!2sEL%20TALLERCITO%20DE%20ESTER%20Y%20GABY!5e0!3m2!1ses-419!2sar!4v1669661142036!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     
                     </div>
-            </div>
     
         </section>
 
@@ -71,32 +79,29 @@
     </main>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
-      
     <footer>
         <section class="rectanguloFooter">
             
             <!-- MAPA GOOGLEMAPS RESPONSIVE-->
             
             <!------------------------------->
-           
+        
         </section>
 
 
     <section class="findusYcopyright">
 
             <div class="findUs">
-                <h3>Encontranos en:</h3>
+                <h3 class="EncontranosEN">Encontranos en:</h3>
                 <a href=""><img src="../img/instagram.icon.png" class="icon" alt="instagram-icon"></a>
                 <a href=""><img src="../img/facebook-icon.png" class="icon" alt="facebook-icon"></a>
                 <a href=""><img src="../img/whatsapp-icon.png" class="icon" alt="whatsapp-icon"></a>
             </div>
             <div class="copyright">
-    
-                <h4>© Copyright Joel Basualdo 2022 CURSO CODERHOUSE - Comision: 48185. All Rights Reserved</h4>
-    
+                <h4 class="copyright">© Copyright Joel Basualdo 2022 CURSO CODERHOUSE - Comision: 48185. All Rights Reserved</h4>
             </div>
         </section>
-       
+    
 
     </footer>
 </body>

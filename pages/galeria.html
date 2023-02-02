@@ -9,95 +9,121 @@
 
     <!-- Fuente  --> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/Flavicon-chrome.png" type="png" sizes="16px">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    
     <title>Tallercito</title>
 
     <meta name="keywords" content="cortineria, decoracion, tapizados, moda, almohadones, living, fundas, confecciones, rollers, barrales, toldos, deco, arte, hogar, paneles, romanas, europeo ">
 </head>
 <body>
 
-    <header class="headerPrincipal">
-            
-        
-        <!---------------- LOGO ---------------------------------->
-        <div class="logo">
-            <a href="../index.html"><img src="../img/tallercito.png" alt="logo"></a>
-        </div>
-        <!-------------------------------------------------------->
-        
-        <!------------------------------- BARRA NAVEGACION ------------------------------>
-        <nav class="navBar"> 
-            <ul class="mainBar">
-                <li><a href="../index.html" class="navEnlace">Home</a></li>
-                <li><a href="../pages/nosotros.html" class="navEnlace">Nosotros</a></li>
-                <li><a href="../pages/productos.html" class="navEnlace">Productos</a></li>
-                <li><a href="../pages/galeria.html" class="navEnlace">Galeria</a></li>
-                <li><a href="../pages/contacto.html" class="navEnlace">Contacto</a></li>
-            </ul>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+            </label>
+            <div class="logo">
+                <a href="/index.html"><img class="imgLogo" src="/img/tallercito.png" alt="logo"></a>
+            </div>
+            <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="../index.html" class="navEnlace">Home</a></li>
+                        <li><a href="../pages/nosotros.html" class="navEnlace">Nosotros</a></li>
+                        <li><a href="../pages/productos.html" class="navEnlace">Productos</a></li>
+                        <li><a href="../pages/galeria.html" class="navEnlace">Galeria</a></li>
+                        <li><a href="../pages/contacto.html" class="navEnlace">Contacto</a></li>
+                    </ul>
+            </div>
         </nav>
-
-
-    </header>
+    </div>
 <!------------------------------- MAIN -------------------------------------------------->
     <main>
 
-        <section class="hero">
-            <div class="parallaxBackground">
+        <section class="heroGaleria">
                 
                 <div class="tallercitoLetras">
                     <img src="../img/Tallercito letras.png" class="tallercitoLetras" alt="tallercitoletras">
                 </div>
+                
 
-                <div class="galeria">
-                    <figure>
-                    <img src="../img/galeria1.jpg" alt="fotoGaleria1"/>
-                    </figure>
-                    <figure>
-                    <img src="../img/galeria2.jpg" alt="fotoGaleria2"/>
-                    </figure>
-                    <figure>
-                    <img src="../img/galeria3.jpg" alt="fotoGaleria3"/>
-                    </figure>
-                        <figure>
-                    <img src="../img/galeria4.jpg" alt="fotoGaleria4"/>
-                    </figure>
-                
-                    <figure>
-                    <img src="../img/galeria5.jpg" alt="fotoGaleria5"/>
-                    </figure>
-                    <figure>
-                    <img src="../img/galeria6.jpg" alt="fotoGaleria6"/>
-                    </figure>
-                
-                
-                </div>
-                
+<div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="/img/galeria1.jpg">
+                    <img src="/img/galeria1.jpg" alt="Roller">
+                </a>
             </div>
-            
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="/img/galeria2.jpg">
+                    <img src="/img/galeria2.jpg" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="/img/galeria3.jpg">
+                    <img src="/img/galeria3.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="/img/galeria4.jpg">
+                    <img src="/img/galeria4.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="/img/galeria5.jpg">
+                    <img src="/img/galeria5.jpg" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="/img/galeria6.jpg">
+                    <img src="/img/galeria6.jpg" alt="Rails">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
         </section>
-        
-        
-        </main>
+    </main>
     
     
     
     
     
     <footer>
+        
         <section class="findusYcopyright">
 
             <div class="findUs">
-                <h3>Encontranos en:</h3>
+                
+                <h3  class="EncontranosEN">Encontranos en:</h3>
+                
                 <a href=""><img src="../img/instagram.icon.png" class="icon" alt="instagram-icon"></a>
                 <a href=""><img src="../img/facebook-icon.png" class="icon" alt="facebook-icon"></a>
                 <a href=""><img src="../img/whatsapp-icon.png" class="icon" alt="whatsapp-icon"></a>
+            
             </div>
+
             <div class="copyright">
-    
-                <h4>© Copyright Joel Basualdo 2022 CURSO CODERHOUSE - Comision: 48185. All Rights Reserved</h4>
-    
+                <h4 class="copyright">© Copyright Joel Basualdo 2022 CURSO CODERHOUSE - Comision: 48185. All Rights Reserved</h4>
             </div>
+            
         </section>
-       
 
     </footer>
 </body>

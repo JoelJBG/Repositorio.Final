@@ -8,43 +8,68 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- Fuente  --> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/Flavicon-chrome.png" type="png" sizes="16px">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <meta name="keywords" content="cortineria, decoracion, tapizados, moda, almohadones, living, fundas, confecciones, rollers, barrales, toldos, deco, arte, hogar, paneles, romanas, europeo ">
     
     <title>Tallercito</title>
 </head>
 <body>
 
-    <header class="headerPrincipal">
-            
-        
-        <!---------------- LOGO ---------------------------------->
-        <div class="logo">
-            <a href="../index.html"><img src="../img/tallercito.png" alt="logo"></a>
-        </div>
-        <!-------------------------------------------------------->
-        
-        <!------------------------------- BARRA NAVEGACION ------------------------------>
-        <nav class="navBar"> 
-            <ul class="mainBar">
-                <li><a href="../index.html" class="navEnlace">Home</a></li>
-                <li><a href="../pages/nosotros.html" class="navEnlace">Nosotros</a></li>
-                <li><a href="../pages/productos.html" class="navEnlace">Productos</a></li>
-                <li><a href="../pages/galeria.html" class="navEnlace">Galeria</a></li>
-                <li><a href="../pages/contacto.html" class="navEnlace">Contacto</a></li>
-            </ul>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+            </label>
+            <div class="logo">
+                <a href="/index.html"><img class="imgLogo" src="/img/tallercito.png" alt="logo"></a>
+            </div>
+            <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="../index.html" class="navEnlace">Home</a></li>
+                        <li><a href="../pages/nosotros.html" class="navEnlace">Nosotros</a></li>
+                        <li><a href="../pages/productos.html" class="navEnlace">Productos</a></li>
+                        <li><a href="../pages/galeria.html" class="navEnlace">Galeria</a></li>
+                        <li><a href="../pages/contacto.html" class="navEnlace">Contacto</a></li>
+                    </ul>
+            </div>
         </nav>
-    </header>
+    </div>
     <main>
-        <section class="hero">
-            <div class="parallaxBackground">
-                
-                <div class="tallercitoLetras">
+        <section class="heroNos">
+            
+            <div class="imgNos">
+                <div class="tallercitoLetras1">
                     <img src="../img/Tallercito letras.png" class="tallercitoLetras" alt="tallercitoletras">
                 </div>
-                <div class="nosotrosYfoto"><p class="textoNosotros">Experiencia en decoracion para tu hogar <br><br> Hace más de 25 años nacimos. Desde aquel día nos desarrollamos, crecimos, nos equivocamos, aprendimos, afianzamos lazos, hicimos amigos y logramos formar un equipo para combatir en cualquier campo. Consideramos que hemos democratizado la forma de hacer cortinas, tapizados y mucho mas, porque quienes tienen todas las herramientas y habilidades, no necesitan tener secretos ni trucos. </p>                           
-                <img class="imagenNosotros" src="../img/maquinacoser.jpg" alt="maquinacocer"></div>
+                <img class="imgNos1" src="/img/Portada Nosotros.jpg" alt="porg">
             </div>
+                
+                <div class="contenedorNosotros">
                     
+                    <p class="Pn0">QUIENES SOMOS</p>
+                    
+                    <div class="textoNosotros">
+                        
+                        <p class="Pn1">Una empresa Sanjosesina dedicada a la venta de cortinas que se inició como un emprendimiento familiar plagado de desafios y de pasión.</p>
+                        <p class="Pn2">Con el afán de estar en sintonía con las tendencias de arquitectura moderna, nuestra curiosidad y entuciasmo fue impulsándonos al desarrollo de mejores técnicas de ventas, encontrar telas que estén a la altura de los gustos de nuestros clientes iniciales y sobre todo, cumplir en todo sentido, cumplir con los plazos, la calidad, y la atención personalizada de los proyectos, una etapa de muchísima dedicación que nos</p>
+                        <p class="Pn3">recompensó con el crecimiento de nuevos clientes que depositaron su confianza en nosotros.</p>
+                        <p class="Pn4">Un crecimiento sano y lindo que nos hizo perdurar en el tiempo, mejorando los tiempo de producción, ampliando los canales de consulta y sumando a los proveedores de materia prima más importantes del mercado.
+
+                            Hoy éste camino transitado nos dá la oportunidad de llegar a todo el pais, descubriendo nuevos desafios y sobre todo, cocociendo los distintos estilos de cada rincon de nuestra tierra.</p>
+                            
+                        </div>
+                        
+                        <div class="logoNos">
+                            <a href="/index.html"><img class="imgLogo2" src="/img/tallercito.png" alt="logo"></a>
+                        </div>
+                </div>
+            
+                
         </section>
         
         </main>
@@ -52,15 +77,13 @@
     <footer>
         <section class="findusYcopyright">
             <div class="findUs">
-                <h3>Encontranos en:</h3>
+                <h3 class="EncontranosEN">Encontranos en:</h3>
                 <a href=""><img src="../img/instagram.icon.png" class="icon" alt="instagram-icon"></a>
                 <a href=""><img src="../img/facebook-icon.png" class="icon" alt="facebook-icon"></a>
                 <a href=""><img src="../img/whatsapp-icon.png" class="icon" alt="whatsapp-icon"></a>
             </div>
             <div class="copyright">
-    
-                <h4>© Copyright Joel Basualdo 2022 CURSO CODERHOUSE - Comision: 48185. All Rights Reserved</h4>
-    
+                <h4 class="copyright">© Copyright Joel Basualdo 2022 CURSO CODERHOUSE - Comision: 48185. All Rights Reserved</h4>
             </div>
         </section>
     </footer>
